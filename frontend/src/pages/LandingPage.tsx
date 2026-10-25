@@ -48,9 +48,9 @@ export const LandingPage: React.FC = () => {
         {/* Number Plate Background Visual Motif */}
         <NumberPlateBackground
           registrationNumber="AP 39 AB 2026"
-          opacity={0.24}
+          opacity={0.95}
           variant="silver"
-          className="top-12"
+          className="top-8 sm:top-10"
         />
 
         <div className="relative z-10 max-w-4xl mx-auto space-y-6">
@@ -75,24 +75,8 @@ export const LandingPage: React.FC = () => {
             VEHICLE<span className="text-cyan-400">CHAIN</span>
           </motion.h1>
 
-          {/* Subtitle */}
-          <motion.p
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            className="text-lg sm:text-xl md:text-2xl text-slate-300 max-w-2xl mx-auto font-light leading-relaxed"
-          >
-            Blockchain-Based Vehicle Ownership Transfer and Registration System
-          </motion.p>
-
-          <motion.p
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.3 }}
-            className="text-xs sm:text-sm text-slate-400 max-w-xl mx-auto"
-          >
-            Eliminating vehicle document forgery and unauthorized ownership transfers through decentralized state machines, SHA-256 document hashing, and tamper-evident smart contracts.
-          </motion.p>
+          {/* Dedicated clearance spacer so the central number plate is completely unobstructed */}
+          <div className="h-24 sm:h-32 md:h-44 w-full pointer-events-none" />
 
           {/* Primary Action Buttons */}
           <motion.div
