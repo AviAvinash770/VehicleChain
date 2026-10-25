@@ -1,0 +1,24 @@
+{
+  "name": "vehiclechain-contracts",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:local": "hardhat run scripts/deploy.ts --network localhost",
+    "node": "hardhat node"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^5.0.2",
+    "@types/chai": "^4.3.11",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.11.24",
+    "chai": "^4.3.7",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.11.1",
+    "hardhat": "^2.22.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
