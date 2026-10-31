@@ -34,3 +34,4 @@ Thumbs.db
 # Uploaded scratch & temp files
 backend/uploads/
 backend/data/
+*.zip
